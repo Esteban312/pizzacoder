@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Coder</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div  class="cabecera">
+            <img src="../assets/img/logo_pizza.png" class="logo" alt="Logo de pizza">
+            <h1>Pizza Coder</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./productos.html">Productos</a></li>
+                <li><a href="./galeria.html">Galería</a></li>
+                <li><a href="./nosotros.html">Nosotros</a></li>
+                <li><a href="./contacto.html">Hacer Pedido</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Realiza tu pedido</h2>
+        <p>Puede hacer tu pedido personalizado</p>
+        <div class="formulario">
+            <form>
+                <fieldset>
+                    <legend>Rellenar para el pedido</legend>
+            
+                    <label for="nameForm">Nombre Completo:</label>
+                    <input type="text" id="nameForm" placeholder="Nombre completo" required>
+            
+                    <label for="phoneForm">Teléfono:</label>
+                    <input type="tel" id="phoneForm" placeholder="Teléfono">
+            
+                    <label for="emailForm">Correo Electrónico:</label>
+                    <input type="email" id="emailForm" placeholder="Correo Electrónico" required>
+            
+                    <label for="addressForm">Dirección de entrega:</label>
+                    <input type="text" id="addressForm" placeholder="Dirección de entrega">
+            
+                    <label for="deliveryTimeForm">Hora de entrega preferida:</label>
+                    <input type="time" id="deliveryTimeForm" placeholder="Hora de entrega preferida">
+            
+                    <label for="msjForm">Dejanos tu comentario:</label>
+                    <textarea id="msjForm" cols="30" rows="5" placeholder="Dejanos tu comentario"></textarea>
+            
+                    <label for="pizzaSizeForm">Tamaño de la pizza:</label>
+                    <select id="pizzaSizeForm">
+                        <option value="small">Pequeña</option>
+                        <option value="medium">Mediana</option>
+                        <option value="large">Grande</option>
+                    </select>
+            
+                    <label for="pizzaToppingsForm">Ingredientes adicionales:</label>
+                    <input type="text" id="pizzaToppingsForm" placeholder="Ingredientes adicionales">
+            
+                    <input type="submit" value="Enviar">
+                </fieldset>
+            </form>
+            <img src="../assets/img/pizza_form.jpg" alt="Pizza siendo servida">
+        </div>
+
+        <p>En Pizza Coder, estamos comprometidos en brindarte la mejor experiencia culinaria. Con nuestra amplia variedad de ingredientes frescos y sabrosos, puedes crear la pizza perfecta según tus gustos. ¡Haz tu pedido hoy mismo!</p>
+    </main>
+    <footer>
+        <div class="listFooter">
+            <div>
+                <h3>Redes Sociales</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Instagram</li>
+                    <li>Twitter</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Otras opciones</h3>
+                <ul>
+                    <li>Menú</li>
+                    <li>Trabaja con nosotros</li>
+                    <li>Términos y condiciones</li>
+                </ul>
+            </div>
+            <p>© 2024 Pizza Coder. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

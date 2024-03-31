@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(241, 234, 135);
+    font-family: "Raleway", sans-serif;
+}
+header{
+    background-color: rgb(223, 166, 93);
+    padding: 20px;
+}
+
+.cabecera{
+    display: flex;
+    justify-content: center;
+}
+
+h1{
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.logo{
+    width: 70px;
+    height: 70px;
+    margin-right: 20px;
+}
+
+header nav{
+    margin: 0 auto;
+    text-align: center;
+}
+
+li{
+    list-style: none;
+}
+
+header nav ul li{
+    display: inline;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: black;
+    background-color: rgb(209, 209, 70);
+    margin: 0 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+header nav ul li a:hover{
+    background-color: rgb(231, 231, 120);
+    box-shadow: 2px 2px 10px black;
+}
+
+h2{
+    font-size: 3rem;
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+}
+
+main p{
+    width: 80%;
+    text-align: center;
+    margin: 10px auto;
+    line-height: 25px;
+}
+
+.hero{
+    background-image: url("../assets/img/pizza_index.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 60vh;
+}
+
+.galeria img{
+    width: 400px;
+}
+
+.nosotros{
+    display: flex;
+    width: 75vw;
+    margin: 0 auto;
+}
+.textNosotros{
+    line-height: 25px;
+}
+.promos{
+    display: flex;
+    justify-content: space-around;
+}
+.card img{
+    width: 300px;
+    border-radius: 10px;
+}
+
+.card{
+    background-color: rgba(184, 84, 84, 0.425) ;
+    width: 320px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+.formulario{
+    display: flex;
+    justify-content: space-around;
+}
+form{
+    width: 400px;
+}
+label, input, textarea, select{
+    display: block;
+    margin-left:30px;
+}
+
+input, textarea, select{
+    margin-bottom: 10px;
+}
+
+textarea{
+    resize: none;
+}
+
+input[type="submit"] {
+    font-size: 16px;
+    cursor: pointer;
+}
+
+footer{
+    background-color: rgb(219, 173, 46);  
+}
+.listFooter{
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    body:before {
+        content: "Este sitio no está disponible para la vista en celular, por favor, ver este sitio en una computadora";
+        display: block;
+        background-color: #FF5733;
+        color: white;
+        font-size: 16px;
+        text-align: center; 
+        padding: 10px; 
+        position: fixed; 
+        top: 0; 
+        width: 100%; 
+        z-index: 9999;
+    }
+
+    header, main, footer {
+        display: none;
+    }
+}
